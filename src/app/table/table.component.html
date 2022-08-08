@@ -1,0 +1,30 @@
+<table class="table table-bordered" border="1">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Telugu</td>
+        <td>Maths</td>
+        <td>physics</td>
+        <td>Chemistry</td> 
+        <td>Total</td>           
+        <td>Avg</td>      
+        <td>Pass/Fail</td> 
+        <td>Grade</td>    
+      </tr> 
+    </thead> 
+    <tbody>    
+      <tr *ngFor="let student of studentDetails">
+        <td>{{student.id}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.telugu}}</td>
+        <td>{{student.maths}}</td>
+        <td>{{student.phy}}</td>
+        <td>{{student.che}}</td> 
+        <td>{{student.total}}</td>
+        <td>{{student.avg}}%</td>      
+        <td>{{student.total_p_f}}</td>
+        <td>{{student.grade}}</td>
+      </tr>   
+    </tbody>
+  </table>
